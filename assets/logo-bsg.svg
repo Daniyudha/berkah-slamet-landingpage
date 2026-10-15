@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 700"
+     width="1000"
+     height="700">
+
+  <!-- Rangka rumah -->
+  <path
+    d="M80 350
+       L500 55
+       L730 215
+       L730 150
+       L800 150
+       L800 265
+       L925 350
+       L825 350
+       L500 125
+       L150 380
+       L150 625
+       L80 680
+       Z"
+    fill="#000000"/>
+
+  <!-- Jendela -->
+  <g fill="#000000">
+    <rect x="445" y="200" width="52" height="52"/>
+    <rect x="510" y="200" width="52" height="52"/>
+    <rect x="445" y="265" width="52" height="52"/>
+    <rect x="510" y="265" width="52" height="52"/>
+  </g>
+
+  <!-- Huruf B -->
+  <path
+    d="M235 355 H420
+       C525 355 525 470 440 490
+       C535 515 510 635 405 635
+       H185 Z
+
+       M285 410 L275 475 H390
+       C435 475 445 410 390 410 Z
+
+       M265 535 L255 590 H390
+       C445 590 440 535 390 535 Z"
+    fill="#000000"
+    fill-rule="evenodd"/>
+
+  <!-- Huruf G -->
+  <path
+    d="M900 370 H735
+       C610 370 565 450 565 520
+       C565 605 630 640 720 640
+       H905 V490 H755
+       L710 550 H835 V585 H725
+       C655 585 635 550 635 510
+       C635 465 675 430 735 430
+       H845 Z"
+    fill="#000000"/>
+
+  <!-- Petir putih agar terlihat di antara B dan G -->
+  <path
+    d="M610 285
+       L435 510
+       H515
+       L410 690
+       L640 470
+       H550 Z"
+    fill="#FFFFFF"
+    stroke="#000000"
+    stroke-width="8"
+    stroke-linejoin="round"/>
+
+  <!-- Garis dasar rumah -->
+  <path
+    d="M150 635 H415
+       L385 680 H80 Z"
+    fill="#000000"/>
+
+  <path
+    d="M480 635 H910
+       L960 680 H440 Z"
+    fill="#000000"/>
+
+</svg>
