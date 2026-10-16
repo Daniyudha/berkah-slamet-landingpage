@@ -64,7 +64,7 @@ var BSG_CONFIG = {
     { icon: 'shield', title: 'Kualitas Terjamin', desc: 'Ukuran & ketebalan sesuai spesifikasi, barang dicek sebelum kirim.' },
     { icon: 'receipt', title: 'Nota & Surat Jalan Resmi', desc: 'Administrasi rapi untuk pembukuan toko maupun proyek.' },
     { icon: 'truck', title: 'Pengiriman Cepat', desc: 'Armada siap kirim, estimasi 1 hari untuk area kota & sekitarnya.' },
-    { icon: 'users', title: 'Ecer & Partai Proyek', desc: 'Fleksibel: beli satuan untuk renovasi hingga volume proyek.' },
+    { icon: 'users', title: 'Partai & Proyek', desc: 'Melayani pembelian partai untuk toko, kontraktor, dan proyek.' },
   ],
 
   steps: [
@@ -75,7 +75,9 @@ var BSG_CONFIG = {
   ],
 
   faqs: [
-    { q: 'Apakah bisa beli ecer/satuan?', a: 'Bisa. Kami melayani pembelian ecer untuk renovasi maupun partai besar untuk proyek.' },
+    { q: 'Apa bedanya galvalum dan spandek?', a: 'Galvalum (zincalume) punya lapisan seng–aluminium sehingga lebih awat dan tahan karat. Spandek lebih tipis, ringan, dan ekonomis — cocok untuk atap rumah tinggal & kanopi.' },
+    { q: 'Ketebalan & ukuran apa saja yang tersedia?', a: 'Atap tersedia 0.25mm & 0.30mm (lebar efektif 90cm). Besi hollow 2x4, 4x4, dan 5x5. Plafon gypsum 9mm & plafon PVC. Untuk panjang/ukuran khusus, tanyakan via WhatsApp.' },
+    { q: 'Berapa jarak reng yang ideal untuk atap baja ringan?', a: 'Untuk ketebalan 0.25–0.30mm, jarak reng umumnya 60–70cm, menyesuaikan kemiringan dan beban atap. Konsultasikan kebutuhan Anda via WhatsApp.' },
     { q: 'Bagaimana cara cek harga terbaru?', a: 'Harga material fluktuatif — chat WhatsApp kami untuk pricelist terbaru hari ini.' },
     { q: 'Apakah ada pengiriman ke luar kota?', a: 'Ada. Ongkir menyesuaikan jarak & volume — tanyakan estimasinya via WhatsApp.' },
     { q: 'Apakah barang bisa ditukar jika salah ukuran?', a: 'Bisa, selama barang belum dipotong/dipakai dan masih dalam kondisi baik. Hubungi kami maksimal H+1 setelah terima.' },
