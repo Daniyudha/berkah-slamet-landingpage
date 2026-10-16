@@ -14,7 +14,6 @@
       return m[c];
     });
   }
-  function rupiah(n) { return 'Rp ' + Number(n || 0).toLocaleString('id-ID'); }
   function icon(name, cls) {
     return '<svg class="' + (cls || 'h-8 w-8') + '" aria-hidden="true"><use href="#i-' + esc(name) + '" /></svg>';
   }
@@ -79,7 +78,6 @@
         '<span class="self-start rounded-full bg-[#e7eefb] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.08em] text-branddark">' + esc(p.category) + '</span>' +
         '<h3 class="mb-0 mt-2 text-[17px] font-bold">' + esc(p.name) + '</h3>' +
         '<p class="m-0 text-[13px] text-muted">' + esc(p.sku) + ' &bull; per ' + esc(p.unit) + '</p>' +
-        '<p class="mx-0 my-2 text-xl font-extrabold text-branddark">' + rupiah(p.price) + '</p>' +
         '<a class="mt-3 flex items-center justify-center gap-2 rounded-full border-2 border-wagreen bg-white px-4 py-2 text-[13px] font-bold text-wagreen no-underline transition hover:-translate-y-px hover:bg-wagreen hover:text-white" href="' + esc(wa) + '" target="_blank" rel="noopener">' + icon('wa', 'h-4 w-4') + 'Tanya Stok</a>' +
       '</article>'
     );
