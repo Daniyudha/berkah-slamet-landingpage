@@ -5,6 +5,25 @@
 // dan bisa dibaca app.js lewat `window.BSG_CONFIG`.
 // Ikon keunggulan memakai nama ikon SVG: tag, box, shield, receipt, truck, users.
 // ============================================================
+// URL gambar produk (hosting: Wikimedia Commons — bebas dipakai, sudah diverifikasi).
+// Ganti nilai di bawah untuk mengubah foto, tanpa menyentuh daftar produk.
+var IMG_ZINCROOF =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dachdeckung_aus_diagonal_verlegten_Grossrauten_aus_Zinkblech%2C_%C3%9Cber_dem_Dorfe_13%2C_Niedernissa%2C_99099_Erfurt%2C_Germany.jpg/960px-Dachdeckung_aus_diagonal_verlegten_Grossrauten_aus_Zinkblech%2C_%C3%9Cber_dem_Dorfe_13%2C_Niedernissa%2C_99099_Erfurt%2C_Germany.jpg';
+var IMG_CORRUGATED =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Corrugated_iron_02_-_Preview_%28Jandre_van_Heerden_via_Poly_Haven%29.webp/960px-Corrugated_iron_02_-_Preview_%28Jandre_van_Heerden_via_Poly_Haven%29.webp';
+var IMG_SPANDEK =
+  'https://upload.wikimedia.org/wikipedia/commons/d/d3/Atap_spandek_6.jpg';
+var IMG_HOLLOW =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Steel_beams_stacked_beside_a_building_in_a_construction_yard.jpg/960px-Steel_beams_stacked_beside_a_building_in_a_construction_yard.jpg';
+var IMG_PIPE =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Steel_pipe.jpg/960px-Steel_pipe.jpg';
+var IMG_TRUSS =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Three_dimensional_truss_construction_Unic_Rotarex%C2%AE.jpg/960px-Three_dimensional_truss_construction_Unic_Rotarex%C2%AE.jpg';
+var IMG_GYPSUM =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gib_board_aka_plasterboard_tapered_edges_01.jpg/960px-Gib_board_aka_plasterboard_tapered_edges_01.jpg';
+var IMG_PVC =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fine_PVC_Ceiling_in_Awka.jpg/960px-Fine_PVC_Ceiling_in_Awka.jpg';
+
 var BSG_CONFIG = {
   companyName: 'Berkah Slamet Gemilang',
   shortName: 'BSG',
@@ -24,19 +43,19 @@ var BSG_CONFIG = {
   email: 'berkahslamet.web@gmail.com',
 
   // Katalog produk (harga contoh — update berkala via file ini).
-  // `image` = URL gambar produk (dari CDN Unsplash, bebas dipakai).
+  // `image` = URL foto produk (lihat konstanta IMG_* di atas, dari Wikimedia Commons).
   products: [
-    { sku: 'GLV-025-90', name: 'Galvalum 0.25mm x 90cm', category: 'Atap', unit: 'lembar', price: 78000, image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'GLV-030-90', name: 'Galvalum 0.30mm x 90cm', category: 'Atap', unit: 'lembar', price: 105000, image: 'https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'SPD-025', name: 'Atap Spandek 0.25mm', category: 'Atap', unit: 'lembar', price: 58000, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'SPD-030', name: 'Atap Spandek 0.30mm', category: 'Atap', unit: 'lembar', price: 72000, image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'HOL-2x4-08', name: 'Besi Hollow 2x4 0.8mm', category: 'Besi', unit: 'batang', price: 62000, image: 'https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'HOL-4x4-12', name: 'Besi Hollow 4x4 1.2mm', category: 'Besi', unit: 'batang', price: 118000, image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'HOL-5x5-16', name: 'Besi Hollow 5x5 1.6mm', category: 'Besi', unit: 'batang', price: 165000, image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'CNP-75', name: 'Kanal C (CNP) 75', category: 'Rangka Baja', unit: 'batang', price: 85000, image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'RNG-030', name: 'Reng Baja Ringan 0.30', category: 'Rangka Baja', unit: 'batang', price: 45000, image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'GYP-9', name: 'Plafon Gypsum 9mm', category: 'Plafon', unit: 'lembar', price: 68000, image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=640&q=70' },
-    { sku: 'PVC-PLF', name: 'Plafon PVC', category: 'Plafon', unit: 'lembar', price: 47000, image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=640&q=70' },
+    { sku: 'GLV-025-90', name: 'Galvalum 0.25mm x 90cm', category: 'Atap', unit: 'lembar', price: 78000, image: IMG_ZINCROOF },
+    { sku: 'GLV-030-90', name: 'Galvalum 0.30mm x 90cm', category: 'Atap', unit: 'lembar', price: 105000, image: IMG_CORRUGATED },
+    { sku: 'SPD-025', name: 'Atap Spandek 0.25mm', category: 'Atap', unit: 'lembar', price: 58000, image: IMG_SPANDEK },
+    { sku: 'SPD-030', name: 'Atap Spandek 0.30mm', category: 'Atap', unit: 'lembar', price: 72000, image: IMG_ZINCROOF },
+    { sku: 'HOL-2x4-08', name: 'Besi Hollow 2x4 0.8mm', category: 'Besi', unit: 'batang', price: 62000, image: IMG_HOLLOW },
+    { sku: 'HOL-4x4-12', name: 'Besi Hollow 4x4 1.2mm', category: 'Besi', unit: 'batang', price: 118000, image: IMG_PIPE },
+    { sku: 'HOL-5x5-16', name: 'Besi Hollow 5x5 1.6mm', category: 'Besi', unit: 'batang', price: 165000, image: IMG_HOLLOW },
+    { sku: 'CNP-75', name: 'Kanal C (CNP) 75', category: 'Rangka Baja', unit: 'batang', price: 85000, image: IMG_TRUSS },
+    { sku: 'RNG-030', name: 'Reng Baja Ringan 0.30', category: 'Rangka Baja', unit: 'batang', price: 45000, image: IMG_TRUSS },
+    { sku: 'GYP-9', name: 'Plafon Gypsum 9mm', category: 'Plafon', unit: 'lembar', price: 68000, image: IMG_GYPSUM },
+    { sku: 'PVC-PLF', name: 'Plafon PVC', category: 'Plafon', unit: 'lembar', price: 47000, image: IMG_PVC },
   ],
 
   advantages: [
